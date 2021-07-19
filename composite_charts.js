@@ -1,6 +1,6 @@
 looker.plugins.visualizations.add({
 create: function(element, config) {
-//element.innerHTML = `
+  //element.innerHTML = `
 //	<style>
 //	.sannith {
 //	min-width: 500px;
@@ -9,13 +9,17 @@ create: function(element, config) {
 //	</style>
 //	`;
 	
-    var container = element.appendChild(document.createElement("div"));
-	container.className = "piechart";
-    container.id = 'piechart_div';
+    var container_1 = element.appendChild(document.createElement("div"));
+	container_1.className = "piechart";
+    container_1.id = 'piechart_div';
+	container_1.style = 'border: none';
 	
-    var container = element.appendChild(document.createElement("div"));
-	container.className = "barchart";
-    container.id = 'barchart_div';
+	
+	
+    var container_2 = element.appendChild(document.createElement("div"));
+	container_2.className = "barchart";
+    container_2.id = 'barchart_div';
+	container_2.style = 'border: none';
 		
   },
 
